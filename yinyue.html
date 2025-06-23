@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hutao.love</title>
+    <link rel="stylesheet" href="iconfont.css">
+    <link rel="stylesheet" href="zhuye.css">
+    <link rel="stylesheet" href="yinyue.css">
+    <link rel="icon" type="imge/x-icon" href="https://i.postimg.cc/RFZZ6Wpz/h-3.png">
+    <script src="js/snowflake.js"></script>
+</head>
+
+<body>
+    <div class="zhenti">
+        <!-- 导航 -->
+        <nav class="nav">
+            <a href="shouye .html" class="nbox-1">
+                <i class="iconfont icon-helanzhu"></i>
+            </a>
+            <a href="zhuye.html" class="nbox">
+                <i class="iconfont icon-chaiquan"></i>
+                <span>主页</span>
+            </a>
+            <a href="youxi.html" class="nbox">
+                <i class="iconfont icon-sanhuamao"></i>
+                <span>游戏</span>
+            </a>
+            <a href="donman.html" class="nbox">
+                <i class="iconfont icon-baimao"></i>
+                <span>动漫</span>
+            </a>
+            <a href="yinyue.html" class="nbox">
+                <i class="iconfont icon-jumao"></i>
+                <span>音乐</span>
+            </a>
+            <a href="tuji.html" class="nbox">
+                <i class="iconfont icon-gengduomengchong"></i>
+                <span>图集</span>
+            </a>>
+        </nav>
+
+        <!-- 主要内容 -->
+        <div class="content">
+            <div class="bfq">
+                <div class="b-top">
+                    <h1>今日音乐</h1>
+                    <img src="https://i.postimg.cc/gkwjCbzj/image.png" alt="">
+                </div>
+                <div class="b-mid">
+                    <img src="https://i.postimg.cc/28Pym9yw/qy.jpg" alt="">
+                    <div class="mid"></div>
+                    <div class="yinyue">
+                        <span>红透晚烟轻</span>
+                        <p>青衣角色曲</p>
+                    </div>
+                    <div class="jindu"></div>
+                </div>
+                <div class="b-bot">
+                    <buutton id="b1"><img src="https://i.postimg.cc/T1swKC9T/image.png" alt=""></button>
+                        <buutton id="b2"><img src="https://i.postimg.cc/x888jWLs/image.png" alt=""></button>
+                            <buutton id="b3"><img src="https://i.postimg.cc/x888jWLs/image.png" alt=""></button>
+                </div>
+            </div>
+            <div class="use">
+                <div class="use-top">
+                    <div class="utop2"></div>
+                    <div class="tx"></div>
+                    <h1>望月舒</h1>
+                    <span>LV6</span>
+                    <h4>独白</h4>
+                </div>
+                <div class="use-bot">
+                    <div class="gedan">
+                        <span class="active">收藏歌单</span>
+                        <div class="playlist-content">
+                            <div class="playlist-item"><i class="fas fa-heart"></i> 胡桃摇</div>
+                            <div class="playlist-item"><i class="fas fa-heart"></i> 璃月印象</div>
+                            <div class="playlist-item"><i class="fas fa-heart"></i> 原神OST精选</div>
+                        </div>
+
+                        <span>热门推荐</span>
+                        <div class="playlist-content">
+                            <div class="playlist-item"><i class="fas fa-fire"></i> 清涟</div>
+                            <div class="playlist-item"><i class="fas fa-gem"></i> 尘间星旅</div>
+                            <div class="playlist-item"><i class="fas fa-user-friends"></i> 落凡尘</div>
+                        </div>
+
+                        <span>我的歌单</span>
+                        <div class="playlist-content">
+                            <div class="playlist-item"><i class="fas fa-music"></i> 未行之路</div>
+                            <div class="playlist-item"><i class="fas fa-music"></i>True</div>
+                            <div class="playlist-item"><i class="fas fa-music"></i> MoonHalo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 尾部 -->
+
+        </div>
+        <div class="usefoot">
+            &nbsp;&nbsp;&nbsp;Powered by <a href="https://github.com/qitinyu?tab=stars" target="_blank">©wangyueshu.love
+            </a> <br>
+            版权所有：©望月舒&nbsp;友情联系：484894496@qq.com
+        </div>
+        <!-- xuehau -->
+        <script>
+            createSnow('', 200);
+        </script>
+        <!-- gedan -->
+        <script>
+            // 歌单展开/收起功能
+            const gedanItems = document.querySelectorAll('.gedan > span');
+            gedanItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    if (this.classList.contains('active')) {
+                        this.classList.remove('active');
+                    } else {
+                        gedanItems.forEach(i => i.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
+            });
+
+            // 初始化
+            window.addEventListener('DOMContentLoaded', () => {
+                createSnow(document.body, 100);
+
+                // 设置初始音量
+                hutaoAudio.volume = volumeSlider.value / 100;
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "宋体";
+ }
+
+ .content {
+     position: relative;
+     margin: 1% auto;
+     width: 90%;
+     min-height: 80vh;
+     display: flex;
+     padding: 2% 10% 1% 10%;
+     border-radius: 15px;
+ }
+
+ /* 播放器部分 */
+ .bfq {
+     left: 0;
+     width: 70%;
+     height: 100%;
+     background-color: #ffffff49;
+     border-radius: 15px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     border: 2px solid #000;
+ }
+
+ /* 播放器头部 */
+ .bfq .b-top {
+     width: 85%;
+     height: 20%;
+     /* background-color: #4A90E2; */
+     border-radius: 15px 15px 0 0;
+     align-items: center;
+ }
+
+ .b-top h1 {
+
+     color: #e0b0ff;
+     font-size: 60px;
+     margin: 50px;
+ }
+
+ .b-top img {
+     width: 80px;
+     height: 80px;
+     position: absolute;
+     right: 80px;
+     top: 40px;
+ }
+
+ .b-top img:hover {
+     cursor: pointer;
+     transform: scale(1.1);
+     transition: transform 0.3s ease;
+ }
+
+ /* 播放器中部 */
+ .b-mid {
+     width: 85%;
+     height: 60%;
+
+ }
+
+ .b-mid img {
+     width: 250px;
+     height: 250px;
+     border-radius: 50%;
+     position: absolute;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-size: cover;
+ }
+
+ .b-mid>.mid {
+     width: 254px;
+     height: 254px;
+     border-radius: 50%;
+     border: 10px solid #5395FE;
+     position: absolute;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .yinyue {
+     width: 80%;
+     height: 40px;
+     position: absolute;
+     top: 55%;
+     left: 10%;
+     text-align: center;
+ }
+
+ .yinyue>span {
+     color: #54d1b6;
+     text-align: center;
+     margin: 0;
+     font-weight: 700;
+     font-size: 3em;
+ }
+
+ .yinyue>p {
+     font-size: 2em;
+     color: #7fdaed;
+     margin: 0;
+     font-weight: bolder;
+ }
+
+ .jindu {
+     width: 80%;
+     height: 6px;
+     position: absolute;
+     top: 75%;
+     left: 10%;
+     background-color: #fff;
+     border-radius: 10px;
+     overflow: hidden;
+ }
+
+ .jindu>time {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 0%;
+     height: 100%;
+     background-color: #54d1b6;
+     border-radius: 10px;
+ }
+
+ /* 播放器底部 */
+ .b-bot {
+     width: 85%;
+     height: 20%;
+     border-radius: 0 0 15px 15px;
+ }
+
+ .b-bot>buutton {
+     width: 80%;
+     height: 20%;
+     flex-direction: row;
+ }
+
+ #b1>img {
+     width: 100px;
+     height: 100px;
+     margin: 0 0 0 25%;
+     display: inline-block;
+     position: absolute;
+ }
+
+ #b2>img {
+     width: 100px;
+     height: 100px;
+     margin: 0 0 0 45%;
+     display: inline-block;
+     position: absolute;
+ }
+
+ #b3>img {
+     width: 100px;
+     height: 100px;
+     margin: 0 0 0 65%;
+     display: inline-block;
+     position: absolute;
+ }
+
+ #b1>img:hover,
+ #b2>img:hover,
+ #b3>img:hover {
+     cursor: pointer;
+     transform: scale(1.1);
+     transition: transform 0.3s ease;
+
+ }
+
+ /* use部分 */
+ .use {
+     width: 400px;
+     height: 100%;
+     background-color: #ffffff49;
+     border-radius: 15px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     position: absolute;
+     right: 50px;
+     border: 2px solid #000;
+ }
+
+ .use .use-top {
+     height: 30%;
+     background-color: pink;
+     border-radius: 15px 15px 0 0;
+ }
+
+ .utop2 {
+     position: absolute;
+     width: 385px;
+     height: 29%;
+     border-radius: 15px 15px 0 0;
+     border: 5px solid #b3e9e9;
+     top: 3px;
+     left: 5px;
+ }
+
+ .tx {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     position: absolute;
+     top: 60px;
+     left: 30px;
+ }
+
+ .use-top h1 {
+     color: #000;
+     font-size: 2em;
+     margin-left: 150px;
+     padding-top: 15%;
+ }
+
+ .use-top span {
+     color: #fff;
+     font-size: 2em;
+     margin-left: 250px;
+     position: absolute;
+     top: 57px;
+     right: 70px;
+     padding: 0 3px 0 3px;
+     background-color: red;
+     border-radius: 10px;
+ }
+
+ .use-top h4 {
+     color: #000;
+     margin-left: 150px;
+     padding-top: 5%;
+     font-size: 20px;
+ }
+
+ .use .use-bot {
+     height: 80%;
+     /* background-color: #F5A623; */
+     border-radius: 0 0 15px 15px;
+ }
+
+ /* 歌单区域 */
+ .gedan {
+     width: 100%;
+     border-radius: 15px;
+     padding: 20px;
+     background: #f0f0f0;
+     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+     transition: all 0.4s ease;
+     margin-top: 10px;
+ }
+
+ .gedan span {
+     display: block;
+     padding: 16px 20px;
+     margin: 10px 0;
+     border-radius: 10px;
+     background: rgba(80, 40, 120, 0.4);
+     cursor: pointer;
+     transition: all 0.3s ease;
+     position: relative;
+     font-weight: 500;
+     color: #000;
+     font-size: 18px;
+     letter-spacing: 0.5px;
+     border: 1px solid rgba(155, 89, 182, 0.3);
+ }
+
+ .gedan span:hover {
+     background: rgba(155, 89, 182, 0.4);
+     transform: translateX(5px);
+     box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+ }
+
+ .gedan span:after {
+     content: '\f107';
+     font-family: 'Font Awesome 5 Free';
+     font-weight: 900;
+     position: absolute;
+     right: 20px;
+     top: 50%;
+     transform: translateY(-50%);
+     color: #f0f0f0;
+     transition: transform 0.3s ease;
+ }
+
+ .gedan span.active:after {
+     transform: translateY(-50%) rotate(180deg);
+ }
+
+ .gedan .playlist-content {
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.5s ease;
+     background: #fff;
+     border-radius: 10px;
+     margin-top: -10px;
+ }
+
+ .gedan .playlist-item {
+     padding: 14px 20px;
+     border-top: 1px solid rgba(155, 89, 182, 0.2);
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     color: #ce8ace;
+     transition: all 0.3s ease;
+ }
+
+ .gedan .playlist-item:hover {
+     background: rgba(138, 43, 226, 0.2);
+     color: #000;
+ }
+
+ .gedan .playlist-item i {
+     margin-right: 15px;
+     color: #e0b0ff;
+     min-width: 20px;
+     font-size: 18px;
+ }
+
+ .gedan span.active+.playlist-content {
+     max-height: 300px;
+ }
+ /* 底部整体区域 */
+ .usefoot {
+     position: absolute;
+     top: 90%;
+     left: 100px;
+     font-family: "宋体";
+     grid-column: 1 / -1;
+     width: calc(250px + (100% - 290px - 60px));
+     min-height: 30px;
+     background: #ffffff49;
+     border-radius: 15px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     text-align: center;
+     color: #000;
+ }
+
+ .usefoot a {
+     color: #000;
+ }
+
+ /* wenzi类样式 */
+ .wenzi {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100px;
+     /* 可根据实际需要调整高度 */
+ }
+
+ .wenzi span {
+     display: block;
+     text-align: center;
+     width: 100%;
+ }
+
+ /* 响应式文本 */
+ @media (min-width: 768px) {
+     .nav:hover+.neiron {
+         margin-left: 100px;
+     }
+
+     .hbox {
+         width: 70%;
+         margin: 20px auto;
+     }
+ }
